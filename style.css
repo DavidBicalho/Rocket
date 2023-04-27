@@ -6,16 +6,20 @@
 
 :root {
   --text-color: white;
-  --bg-url: url(./Assets/Interface=Mobile\,\Theme=Dark\mode.jpg);
+  --bg-url: url(./Assets/Interface=Mobile\,\ Theme=Dark\ mode.jpg);
 }
 
 .light {
   --text-color: black;
-  --bg-url: url(./Assets/Interface=Mobile\\Theme=Dark\mode.jpg);
+  --bg-url: url(./Assets/Interface=Mobile\,\ Theme=Light\ mode.jpg);
 }
 
 body {
-  background-image: var(--bg-url) no-repeat top center/cover;
+  background-image: var(--bg-url);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
 }
 
 body * {
@@ -72,7 +76,7 @@ ul li a {
 
 ul li a:hover {
   background-color: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid var (--text-color);
+  border: 1.5px solid var(--text-color);
 }
 
 #social-links {
